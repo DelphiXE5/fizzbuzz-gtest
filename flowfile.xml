@@ -1,0 +1,81 @@
+<flow>
+    <feature>
+        <title>FizzBuzz</title>
+        <description></description>
+        <scenario id="1">
+            <title>Fizzbuzz function returns a number.</title>
+            <description></description>
+            <test>
+                <sentence id="1">Given is a <parameter>number</parameter> which is not divisible by 3 or 5.</sentence>
+                <sentence id="2">When the function called with this <parameter>number</parameter>.</sentence>
+                <sentence id="3">Then the function should return the invoked <parameter>number</parameter>.</sentence>
+            </test>
+        </scenario>
+        <scenario id="2">
+            <title>Fizzbuzz function returns "fizz".</title>
+            <description></description>
+            <test>
+                <sentence id="1">Given is a <parameter>number</parameter> which is divisible by 3.</sentence>
+                <sentence id="2">When the function called with this <parameter>number</parameter>.</sentence>
+                <sentence id="3">Then the function should return <parameter>"fizz"</parameter>.</sentence>
+            </test>
+        </scenario>
+        <scenario id="3">
+            <title>Fizzbuzz function returns "buzz".</title>
+            <description></description>
+            <test>
+                <sentence id="1">Given is a <parameter>number</parameter> which is divisible by 5.</sentence>
+                <sentence id="2">When the function called with this <parameter>number</parameter>.</sentence>
+                <sentence id="3">Then the function should return <parameter>"buzz"</parameter>.</sentence>
+            </test>
+        </scenario>
+        <scenario id="4">
+            <title>Fizzbuzz function returns "fizzbuzz".</title>
+            <description></description>
+            <test>
+                <sentence id="1">Given is a <parameter>number</parameter> which is divisible by 3 or 5.</sentence>
+                <sentence id="2">When the function called with this <parameter>number</parameter>.</sentence>
+                <sentence id="3">Then the function should return the <parameter>fizzbuzz</parameter>.</sentence>
+            </test>
+        </scenario>
+    </feature>
+    <mappings>
+        <mapping full_qualified_name="Fizzbuzz_test.global">
+            <scenario_id>1</scenario_id>
+            <sentence_id>3</sentence_id>
+            <line_number>6</line_number>
+            <line_number>7</line_number>
+            <line_number>8</line_number>
+            <line_number>9</line_number>
+            <line_number>10</line_number>
+            <line_number>11</line_number>
+        </mapping>
+        <mapping full_qualified_name="Fizzbuzz_test.global">
+            <scenario_id>2</scenario_id>
+            <sentence_id>3</sentence_id>
+            <line_number>16</line_number>
+            <line_number>17</line_number>
+            <line_number>18</line_number>
+            <line_number>19</line_number>
+            <line_number>10</line_number>
+        </mapping>
+        <mapping full_qualified_name="Fizzbuzz_test.global">
+            <scenario_id>3</scenario_id>
+            <sentence_id>3</sentence_id>
+            <line_number>25</line_number>
+            <line_number>26</line_number>
+            <line_number>27</line_number>
+            <line_number>28</line_number>
+            <line_number>29</line_number>
+        </mapping>
+        <mapping full_qualified_name="Fizzbuzz_test.global">
+            <scenario_id>4</scenario_id>
+            <sentence_id>3</sentence_id>
+            <line_number>34</line_number>
+            <line_number>35</line_number>
+            <line_number>36</line_number>
+            <line_number>37</line_number>
+            <line_number>38</line_number>
+        </mapping>
+    </mappings>
+</flow>

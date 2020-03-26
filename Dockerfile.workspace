@@ -1,0 +1,2 @@
+ARG CPP_WORKSPACE_VERSION=latest
+FROM eu.gcr.io/polylith-177713/cpp-workspace:$CPP_WORKSPACE_VERSION

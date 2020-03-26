@@ -1,0 +1,15 @@
+FROM gcc:latest
+
+WORKDIR /app
+ADD  . .
+
+RUN apt-get clean && apt-get update
+RUN apt-get install -y cmake
+RUN make
+
+VOLUME /data/task-data
+WORKDIR /data/task-data
+
+EXPOSE 9091
+
+CMD ["/bin/bash", "-c", "cp -R /app/. /data/task-data/ && /agent-download-directory/agent"]
