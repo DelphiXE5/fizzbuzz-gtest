@@ -9,7 +9,7 @@ all: resources tests
 resources:
 	if [ ! -d "lib" ]; then mkdir lib; fi
 	if [ ! -d "build" ]; then mkdir build; fi
-	cd lib; if [ ! -d "googletest" ] ; then git clone -b 'master' --single-branch --depth 1 https://github.com/google/googletest; fi	
+	cd lib; if [ ! -d "googletest" ] ; then git clone -b 'release-1.10.0' --single-branch --depth 1 https://github.com/google/googletest; fi	
 	cd build; cmake .. -DCMAKE_BUILD_TYPE=Debug -G "Unix Makefiles";
 
 tests:
